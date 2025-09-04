@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marhey:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin:70px;
+    margin-top:0;
+    padding:2em;
+    background-color:#FFE2E2;
+    font-family: sans-serif;
+}
+
+h1, h2{font-family: 'Space Mono';
+color: #FB2C36
+}
+h3{
+    font-family: 'Open Sans';
+    font-size:1em;
+}
+/* contenedor principal*/
+#container{
+    display:grid;
+    grid-template-columns:1fr 2fr ;
+    gap:5em;
+    align-items:start;
+/*contenedor lado izquierdo - parafos y boton*/
+}
+.intro{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+
+.intro p{
+    font-family: 'Open Sans';
+    text-align:justify;
+    line-height:1.5;
+}
+/* contenedor lado derecho - titulo 2 + galeria de proyectos*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+
+}
+.intro a{
+    align-self:center;
+    margin: top 1em;;
+}
+
+.intro button{
+    font-family:'Space Mono';
+    font: size 1em;;
+    padding: 15px 45px;
+    margin-top: 30px;
+    border:none;
+    background-color:#FFA2A2;
+    color:black;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.intro button:hover{
+    background:#82181A;
+    color:#FFE2E2;
+
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+
+}
+
+/*--- tarjetas individuales ---*/
+
+.tarjeta{
+    background-color: beige;
+    border-radius: 8px;
+    overflow:hidden;
+
+}
+.tarjeta a{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:inherit;
+    transition: transform 0.2s ease-in-out
+}
+
+.tarjeta a:hover{
+    filter:brightness(70%);
+    transform: scale(1.05);
+    
+}
+
+.tarjeta img{
+    display: block;
+    width: 100%;
+    
+}
